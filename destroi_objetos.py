@@ -3,10 +3,10 @@
 
 # COMMAND ----------
 
-# DBTITLE 1,create schema
-print(f"Criando Schema {schema}")
+# DBTITLE 1,Drop schema
+print(f"Drop Schema {schema}")
 spark.sql(f"DROP SCHEMA IF EXISTS {schema} CASCADE")
 
 # COMMAND ----------
-print(f"Criando Volume {volume}")
+print(f"Drop Volume {volume}")
 spark.sql(f"DROP VOLUME IF EXISTS {volume}")
