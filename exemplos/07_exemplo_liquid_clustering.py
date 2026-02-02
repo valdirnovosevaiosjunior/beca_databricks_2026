@@ -47,3 +47,8 @@ display(spark.sql(f"show create table {schema}.viagens_liquid_clustering"))
 
 # DBTITLE 1,Histórico de Versões
 display(spark.sql(f"describe history {schema}.viagens_liquid_clustering"))
+
+# COMMAND ----------
+
+# DBTITLE 1,Describe Detail
+display(spark.sql(f"describe detail {schema}.viagens_liquid_clustering"))
