@@ -17,7 +17,7 @@ df = (
              "pickup_date",
              F.to_date("tpep_pickup_datetime")
          )
-         .filter("tpep_pickup_datetime >= '2026-01-01 00:00:00' AND tpep_pickup_datetime < '2016-02-01 00:00:00'")
+         .filter("tpep_pickup_datetime >= '2016-01-01 00:00:00' AND tpep_pickup_datetime < '2016-02-01 00:00:00'")
          .withColumn("created_date", F.current_timestamp())
 )
 
