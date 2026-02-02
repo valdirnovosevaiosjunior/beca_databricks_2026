@@ -55,5 +55,12 @@ df = spark.createDataFrame([("Francisco", 68, "usa"), ("Juliana", 26, "brasil")]
 
 # COMMAND ----------
 
+# DBTITLE 1,Consulta 
+display(spark.sql(f"""
+    select * from {schema}.tabela_evoluida
+"""))
+
+# COMMAND ----------
+
 # DBTITLE 1,Histórico de Versões
 display(spark.sql(f"describe history {schema}.tabela_evoluida"))
