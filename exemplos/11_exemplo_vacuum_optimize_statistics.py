@@ -21,8 +21,6 @@ def process_all_tables():
             # ANALYZE
             spark.sql(f"ANALYZE TABLE {full_table} COMPUTE STATISTICS FOR ALL COLUMNS")
 
-# COMMAND ----------
-
 if __name__ == "__main__":
     process_all_tables()
     print("Processamento concluído.")
