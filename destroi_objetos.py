@@ -5,7 +5,7 @@
 
 # DBTITLE 1,create schema
 print(f"Criando Schema {schema}")
-spark.sql(f"DROP SCHEMA IF NOT EXISTS {schema} CASCADE")
+spark.sql(f"DROP SCHEMA IF EXISTS {schema} CASCADE")
 
 # COMMAND ----------
 print(f"Criando Volume {volume}")
